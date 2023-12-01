@@ -9,5 +9,23 @@
 //a method to check the condition (reverse?)
 //a function
 
+const chosen_word = prompt("Scegli una parola") 
+
+function palin_word(chosen_word) {  
+//created un array
+const word_array = [chosen_word]
+//converted array into separeted items
+const spelling_array = word_array.toString()  
+const rev_spelling_array = spelling_array.reverse()
+if (spelling_array = rev_spelling_array) {
+    console.log("La parola è palindroma");    
+}
+}
+
+palin_word(chosen_word)
+
+
+
+
 
 
