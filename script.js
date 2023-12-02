@@ -11,18 +11,44 @@
 
 const chosen_word = prompt("Scegli una parola") 
 
-function palin_word(chosen_word) {  
-//created un array
-const word_array = [chosen_word]
-//converted array into separeted items
-const spelling_array = word_array.toString()  
-const rev_spelling_array = spelling_array.reverse()
-if (spelling_array = rev_spelling_array) {
-    console.log("La parola è palindroma");    
+//NON FUNZIONA MA CONSERVO COME APPUNTI
+/* //created un array
+const word_array = [];
+for (let i = 0; i < chosen_word.length; i++) {
+    word_array.push(chosen_word[i])     
 }
-}
+if (word_array === word_array.reverse()) {
+    } */
+let check = "palindroma"
+console.log(chosen_word.length);
+let lunghezza = chosen_word.length - 1;
 
-palin_word(chosen_word)
+
+for (let i = 0; (i < chosen_word.length) && (check = "palindroma"); i++) {
+    console.log(chosen_word[i], chosen_word[lunghezza]);
+    
+    if (chosen_word[i] !== chosen_word[lunghezza]) {
+      check = "non palindroma";
+      
+    }
+    lunghezza = lunghezza - 1;    
+    } 
+   
+
+document.querySelector(".text").innerHTML = `La parola é ${check}`
+    
+
+
+//function palin_word(chosen_word) {  
+
+
+
+
+
+
+
+
+
 
 
 
