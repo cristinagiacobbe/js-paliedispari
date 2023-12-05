@@ -36,11 +36,10 @@ function PalindromeVerify(chosen_word) {
         lunghezza = lunghezza - 1;    
         } 
        
-    return check
-    document.querySelector(".text").innerHTML = `La parola é ${check}`  
+    return document.querySelector(".text").innerHTML = `La parola é ${check}`  
 }
 
-    
+   PalindromeVerify(chosen_word) 
 
 
 
