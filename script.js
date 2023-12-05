@@ -19,27 +19,31 @@ for (let i = 0; i < chosen_word.length; i++) {
 }
 if (word_array === word_array.reverse()) {
     } */
-let check = "palindroma"
-console.log(chosen_word.length);
-let lunghezza = chosen_word.length - 1;
 
-
-for (let i = 0; (i < chosen_word.length) && (check = "palindroma"); i++) {
-    console.log(chosen_word[i], chosen_word[lunghezza]);
+function PalindromeVerify(chosen_word) {
+    let check = "palindroma"
+    //console.log(chosen_word.length);
+    let lunghezza = chosen_word.length - 1;
     
-    if (chosen_word[i] !== chosen_word[lunghezza]) {
-      check = "non palindroma";
-      
-    }
-    lunghezza = lunghezza - 1;    
-    } 
-   
+    
+    for (let i = 0; (i < chosen_word.length) && (check = "palindroma"); i++) {
+        console.log(chosen_word[i], chosen_word[lunghezza]);
+        
+        if (chosen_word[i] !== chosen_word[lunghezza]) {
+          check = "non palindroma";
+          
+        }
+        lunghezza = lunghezza - 1;    
+        } 
+       
+    return check
+    document.querySelector(".text").innerHTML = `La parola é ${check}`  
+}
 
-document.querySelector(".text").innerHTML = `La parola é ${check}`
     
 
 
-//function palin_word(chosen_word) {  
+
 
 
 

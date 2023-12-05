@@ -26,18 +26,21 @@ function pcRandom() {
     //console.log("Numero scelto dal pc:", pcNumber);
     return pcNumber
 }
-console.log(pcRandom(pcNumber));
-const numberSum = (userNumber + pcNumber);
+const pcChoise = pcRandom()
+console.log("Il numero scelto dal pc è:", pcChoise);
+
+const numberSum = (userNumber + pcChoise);
 console.log("La somma è: ", numberSum);
 //console.log("Il resto è: ", numberSum % 2);
 
 function EvenOdd(numberSum) {
     
      if (((numberSum % 2 == 0) && (userEvenOdd === "pari")) || ((numberSum % 2 > 0) && (userEvenOdd === "dispari"))) {
-         return ("Hai vinto!");
+         console.log("Hai vinto!")
      } else {
-         return ("Hai perso");
+         console.log("Hai perso")
      }  
 }
 
+EvenOdd(numberSum)
 
